@@ -1,75 +1,72 @@
 body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
     margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    background:#111;
-    color:white;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    width:380px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
     text-align:center;
 }
 
-header{
-    background:linear-gradient(45deg,#ff512f,#dd2476);
-    padding:25px;
+h1{
+    margin-bottom:5px;
 }
 
-header h1{
-    margin:0;
-    font-size:40px;
+p{
+    color:gray;
 }
 
-.buttons{
-    margin:20px;
+.input-group{
+    text-align:left;
+    margin:12px 0;
+}
+
+label{
+    font-weight:bold;
+    font-size:14px;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+input:focus,select:focus,textarea:focus{
+    border-color:#4facfe;
 }
 
 button{
-    padding:10px 18px;
-    margin:8px;
+    margin-top:15px;
+    width:100%;
+    padding:10px;
     border:none;
-    border-radius:20px;
-    background:#222;
+    background:#4facfe;
     color:white;
+    font-size:16px;
+    border-radius:8px;
     cursor:pointer;
     transition:0.3s;
 }
 
 button:hover{
-    background:#ff512f;
-    transform:scale(1.1);
+    background:#0077ff;
 }
 
-.menu{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-    padding:20px;
-}
-
-.card{
-    background:#1c1c1c;
-    width:250px;
-    border-radius:15px;
-    overflow:hidden;
-    transition:0.4s;
-    box-shadow:0 0 15px rgba(0,0,0,0.6);
-}
-
-.card img{
-    width:100%;
-    height:160px;
-    object-fit:cover;
-}
-
-.card h3{
-    margin:10px 0 5px;
-}
-
-.card p{
-    color:#ffb347;
-    font-size:20px;
-    margin-bottom:15px;
-}
-
-.card:hover{
-    transform:translateY(-10px) scale(1.05);
-    box-shadow:0 0 25px #ff512f;
+#msg{
+    margin-top:12px;
+    font-weight:bold;
+    color:green;
 }

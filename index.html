@@ -1,55 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Foodie's Restaurant</title>
+    <title>Symbiosis Institute of Technology - Event Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>🍽️ Foodie's Restaurant</h1>
-    <p>Delicious Food • Happy Mood</p>
-</header>
+<div class="container">
 
-<div class="buttons">
-    <button onclick="filterMenu('all')">All</button>
-    <button onclick="filterMenu('veg')">Veg</button>
-    <button onclick="filterMenu('fast')">Fast Food</button>
-    <button onclick="filterMenu('drink')">Drinks</button>
-    <button onclick="filterMenu('dessert')">Desserts</button>
-</div>
+    <h1>🎓 Symbiosis Institute of Technology</h1>
+    <h2>Student Event Registration Portal</h2>
+    <p>Register for upcoming campus events</p>
 
-<div class="menu" id="menu">
+    <form id="eventForm">
 
-    <div class="card veg">
-        <img src="https://source.unsplash.com/300x200/?paneer">
-        <h3>Paneer Butter Masala</h3>
-        <p>₹220</p>
-    </div>
+        <div class="input-group">
+            <label>Student Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
 
-    <div class="card fast">
-        <img src="https://source.unsplash.com/300x200/?burger">
-        <h3>Cheese Burger</h3>
-        <p>₹150</p>
-    </div>
+        <div class="input-group">
+            <label>College Email ID</label>
+            <input type="email" id="email" placeholder="example@sit.edu.in" required>
+        </div>
 
-    <div class="card drink">
-        <img src="https://source.unsplash.com/300x200/?cold-coffee">
-        <h3>Cold Coffee</h3>
-        <p>₹120</p>
-    </div>
+        <div class="input-group">
+            <label>Mobile Number</label>
+            <input type="tel" id="phone" placeholder="10 digit mobile number" required>
+        </div>
 
-    <div class="card dessert">
-        <img src="https://source.unsplash.com/300x200/?icecream">
-        <h3>Chocolate Ice Cream</h3>
-        <p>₹90</p>
-    </div>
+        <div class="input-group">
+            <label>Branch / Department</label>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option>Computer Engineering</option>
+                <option>Artificial Intelligence & Data Science</option>
+                <option>Electronics & Telecommunication</option>
+                <option>Mechanical Engineering</option>
+                <option>Civil Engineering</option>
+                <option>Information Technology</option>
+            </select>
+        </div>
 
-    <div class="card veg">
-        <img src="https://source.unsplash.com/300x200/?pizza">
-        <h3>Veg Pizza</h3>
-        <p>₹199</p>
-    </div>
+        <div class="input-group">
+            <label>Academic Year</label>
+            <select id="year" required>
+                <option value="">Select Year</option>
+                <option>First Year</option>
+                <option>Second Year</option>
+                <option>Third Year</option>
+                <option>Fourth Year</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Select Event</label>
+            <select id="event" required>
+                <option value="">Choose Event</option>
+                <option>Technical Hackathon</option>
+                <option>Paper Presentation</option>
+                <option>Project Exhibition</option>
+                <option>Code Debugging Competition</option>
+                <option>Robotics Workshop</option>
+                <option>Technical Quiz</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Statement of Purpose</label>
+            <textarea id="reason" rows="3" placeholder="Why do you want to participate?" required></textarea>
+        </div>
+
+        <button type="submit">Submit Registration</button>
+
+        <p id="msg"></p>
+
+    </form>
+
+    <footer style="margin-top:15px; font-size:13px; color:gray;">
+        © 2026 Symbiosis Institute of Technology | Student Activity Cell
+    </footer>
 
 </div>
 
